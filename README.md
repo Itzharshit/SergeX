@@ -39,7 +39,7 @@ $ cp sample_config.py config.py
 ## ✨ Using Docker ✨
 
 ```console
-$ git clone https://github.com/itzharshit/SergeX
+$ git clone https://github.com/Code-X-Mania/SergeX
 $ cd SergeX
 $ cp sample_config.env config.env
 ```
