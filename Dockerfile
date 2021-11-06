@@ -64,11 +64,11 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/innexiaBot
-RUN git clone -b shiken https://github.com/QueenArzoo/innexiaBot /root/innexiaBot
+# Copy Python Requirements to /root/SergeX
+RUN git clone -b shiken https://github.com/Code-X-Mania/SergeX /root/SergeX
 WORKDIR /root/innexiaBot
 
-#Copy config file to /root/innexiaBot/innexiaBot
+#Copy config file to /root/SergeX/SergeX
 COPY ./innexiaBot/sample_config.py ./innexiaBot/config.py* /root/innexiaBot/innexiaBot/
 
 ENV PATH="/home/bot/bin:$PATH"
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","innexiaBot"]
+CMD ["python3","-m","SergeX"]
